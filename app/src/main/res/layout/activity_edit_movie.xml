@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditMovie">
+    <EditText
+        android:paddingStart="10dp"
+        android:background="@drawable/edit_text"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="30dp"
+        android:id="@+id/nameMovie"
+        android:hint="Movie Name"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        tools:ignore="HardcodedText,MissingConstraints" />
+    <EditText
+        android:paddingStart="10dp"
+        android:background="@drawable/edit_text"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameMovie"
+        android:layout_margin="30dp"
+        android:id="@+id/aboutMovei"
+        android:hint="About Movie"
+        android:maxLines="5"
+        android:gravity="top"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        tools:ignore="HardcodedText,MissingConstraints" />
+    <EditText
+        android:paddingStart="10dp"
+        android:background="@drawable/edit_text"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aboutMovei"
+        android:layout_margin="30dp"
+        android:id="@+id/timeMovie"
+        android:hint="Movie Time"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        tools:ignore="HardcodedText,MissingConstraints" />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/saveMovie"
+        android:text="Save"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timeMovie"
+        android:layout_width="120dp"
+        android:textSize="20sp"
+        android:background="#66D6EF"
+        android:textColor="@color/white"
+        android:layout_height="50dp">
+
+    </androidx.appcompat.widget.AppCompatButton>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
