@@ -18,6 +18,9 @@ class MyCustomAdapter(val list: List<Malumot>) : RecyclerView.Adapter<MyCustomAd
             binding.delete.setOnClickListener{
                 itemEditRemove?.removeItem(adapterPosition)
             }
+            binding.edit.setOnClickListener{
+                itemEditRemove?.editItem(adapterPosition)
+            }
         }
     }
     fun setListener(listener: RecycleViewEditRemove){
